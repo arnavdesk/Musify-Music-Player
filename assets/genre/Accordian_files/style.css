@@ -1,0 +1,26 @@
+
+.acc-1{
+    width: 100%;
+}
+
+.item-1{
+    width: 100%;
+    background-color: purple;
+    margin: 0px;
+}
+
+a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.item-1-body{
+    width: 100%;
+    border: 1px solid black;
+}
+
+p{
+    margin :0px;
+}
