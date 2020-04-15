@@ -9,6 +9,7 @@ body
     flex-direction: column;
     align-items: center;
     margin: 0px;
+    margin-bottom: 30px;
     padding: 4px;
     background-color: rgb(11, 16, 39) ;
     color: white;
@@ -26,7 +27,7 @@ section{
 }
 
 .section-heading{
-    margin: 7px;
+    margin: 10px;
     margin-left: 0px;
 }
 
@@ -239,11 +240,11 @@ section{
     width: 45%;
 }
 
-.latest-release-song:hover{
+/* .latest-release-song:hover{
     box-shadow: 0px 0px 10px 10px black;
     transition: all 0.5s ease-in-out;
     z-index: 3;
-}
+} */
 
 
 .latest-release-img{
@@ -257,7 +258,7 @@ section{
 }
 
 .latest-release-utility{
-    
+    position: relative;
     margin-left: auto;
     align-self: flex-start;
 }
@@ -276,7 +277,7 @@ section{
     font-weight: 100;
     font-size: 0.6em;
     margin: 15px;
-    color: grey;
+    color: slategray;
 }
 
 .latest-release-utility span{
@@ -284,14 +285,42 @@ section{
     font-size: 0.9em;
 }
 
+
+.flap-container:hover .flap{
+    min-width: 180px;
+    max-width: 300px;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+
+
+.flap{
+    max-width: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    background-color: white;
+    color: black;
+}
+
+.flap a{
+    font-size: 0.8em;
+    display: block;
+    margin: 2px;
+    padding: 2px;
+}
+
 .latest-release-utility p{
     font-size: 0.6em;
-    color: grey;
+    color: slategray;
 }
 
 /* popular artist */
 
 .artist-containter{
+    box-sizing: border-box;
     background-color: rgb(11, 16, 39);
     padding: 20px;
     padding-left: 0px;
@@ -376,6 +405,7 @@ section{
 /* Genre extended */
 
 .genre-extend{
+    margin-bottom: 20px;
     margin-top: 20px;
     align-items: center;
     display: flex;
@@ -386,6 +416,7 @@ section{
     position: relative;
     width: 30%;
 }
+
 
 .genre-extend-img{
     filter: blur(1px);
@@ -402,6 +433,44 @@ section{
     left: 50%;
 }
 
+
+/* Latest english hindi */
+
+.latest-EH-container{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.latest-song-EH{
+    width: 15%;
+}
+
+.latest-song-EH-img-container{
+    width: 100%;
+    height: auto;
+}
+
+.latest-song-EH-img{
+    width: 100%;
+    height: auto;
+}
+
+.latest-song-EH-details h5{
+    margin: 0px;
+    font-size: 0.65em;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.latest-song-EH-details p{
+    margin: 0px;
+    font-size: 0.6em;
+    color: slategray;
+}
 
 /* @media screen and (max-width: 1200px) {
 
