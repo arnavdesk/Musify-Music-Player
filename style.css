@@ -218,17 +218,25 @@ section{
 
 /* latest release setion */
 
+.latest-release{
+    width: 100%;
+}
+
 .latest-release-container{
     display: flex;
     flex-wrap: wrap;
 }
 
 .latest-release-song{
+    margin-right: 10px;
     background-color: rgb(11, 16, 39);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 20px;
+    padding-left: 0px;
+    width: 45%;
 }
 
 .latest-release-song:hover{
@@ -237,11 +245,6 @@ section{
     z-index: 3;
 }
 
-.latest-release-song{
-    padding: 20px;
-    padding-left: 0px;
-    width: 45%;
-}
 
 .latest-release-img{
     width: 100%;
@@ -265,6 +268,7 @@ section{
 
 .latest-song-details h5{
     margin: 15px;
+    margin-top: 0px;
     font-weight: 500;
     font-style: 0.8em;
 }
@@ -331,3 +335,80 @@ section{
     font-weight: 300;
     margin: 0px;
 }
+
+/* genre section */
+
+.genre{
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(17, 25, 63);
+}
+
+.genre-logo-heading-container{
+    width: 13%;
+    margin-right: 30px;
+}
+
+.genre-heading-logo{
+    width: 100%;
+}
+
+.genre-logo-container{
+    width: 9%;
+}
+
+.genre-logo{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.genre-logo-name
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 0.7em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/* @media screen and (max-width: 1200px) {
+
+    .artist-containter{
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .artist{
+        width: 15%;
+
+    }
+
+    .main-container{
+        width: 95%;
+    }
+    .main-content{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
+
+    .artist-containter{
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .artist{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .latest-release-song{
+        width: 100%;
+    }
+} */
