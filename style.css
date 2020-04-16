@@ -296,6 +296,7 @@ section{
 
 
 .flap{
+    opacity: 0.8;
     max-width: 0px;
     overflow: hidden;
     position: absolute;
@@ -472,7 +473,108 @@ section{
     color: slategray;
 }
 
-/* @media screen and (max-width: 1200px) {
+
+/* Aside section (QUEUE section) */
+
+.queue-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.queue-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.queue-flap{
+    position: relative;
+    color: green;
+    font-size: medium;
+}
+
+.queue-flap-body{
+    max-width: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 10%;
+    color: black;
+    background-color:white;
+}
+
+.queue-flap-body a{
+    display: block;
+    padding: 10px;
+}
+
+.queue-flap:hover .queue-flap-body{
+    max-width: 300px;
+}
+
+.queue-songs-list{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.queue-song{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+
+.queue-img-container{
+    margin-left: 30px;
+    width: 13%;
+    box-shadow: 0px 0px 10px 1px grey;
+}
+
+.queue-img{
+    width: 100%;
+}
+
+.queue-song-details{
+    margin-left: 30px;
+    align-self: flex-start;
+}
+
+.queue-song-details p{
+    margin: 5px;
+    color: slategray;
+    font-size: 0.7em;
+}
+
+.queue-song-details h4{
+    font-weight: 500;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+.numbering{
+    font-size: 0.7em;
+    color: slategray;
+}
+
+.fav-btn{
+    margin-left: auto;
+    color: slategray;
+    font-size: 0.9em;
+}
+
+.playing{
+    font-size: 0.9em;
+    color: blue;
+}
+
+@media screen and (max-width: 1200px) {
 
     .artist-containter{
         overflow: hidden;
@@ -496,6 +598,30 @@ section{
 @media screen and (max-width: 768px)
 {
 
+    .genre-logo-container:nth-last-child(-n+2){
+        display: none;
+    }
+
+    html{
+        font-size: 17px;
+    }
+
+    .queue-section{
+        display: none;
+    }
+
+    .latest-song-EH{
+        width: 30%;
+    }
+
+    .latest-EH  .latest-song-EH:nth-last-child(-n+3){
+        display: none;
+    }
+    
+    .artist:nth-last-child(-n+3){
+        display: none;
+    }
+
     .artist-containter{
         overflow: hidden;
         flex-wrap: wrap;
@@ -509,4 +635,4 @@ section{
     .latest-release-song{
         width: 100%;
     }
-} */
+}
