@@ -599,6 +599,8 @@ section{
 @media screen and (max-width: 768px)
 {
 
+
+
     #logo-name{
         display: none;
     }
@@ -624,6 +626,14 @@ section{
     #prof-pic{
         height: 40px;
         width: 40px;
+    }
+
+    .genre-logo-heading-container{
+        width: 20%;
+    }
+
+    .genre-logo-container{
+        width: 14%;
     }
 
     .genre-logo-container:nth-last-child(-n+2){
