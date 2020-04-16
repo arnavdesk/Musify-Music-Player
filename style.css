@@ -141,15 +141,14 @@ section{
 /* main carousel display */
 
 .image-carousel{
+    margin-bottom: 40px;
+    display: flex;
     width: 95%;
     position: relative;
-    height: 40vh;
 }
 
 .car-pos{
     width: 55%;
-    height: 33vh;
-    position: absolute;
 }
 
 .img-car-size{
@@ -160,7 +159,6 @@ section{
 .car-1{
     filter: blur(2px);
     -webkit-filter: blur(2px);
-    position: absolute;
     transition: all 1s ease-in-out;
 }
 
@@ -174,10 +172,10 @@ section{
 
 .car-2{
     box-shadow: 0px 0px 10px 10px black;
-    position: absolute;
-    left: 20%;
     transform: scale(1.1);
     z-index: 1;
+    position: absolute;
+    left: 20%;
     transition: all 1s ease-in-out;
     box-shadow: 1px;
 }
@@ -186,8 +184,6 @@ section{
 .car-3{
     filter: blur(2px);
     -webkit-filter: blur(2px);
-    position: absolute;
-    right: 0%;
     transition: all 1s ease-in-out;
 }
 
@@ -578,55 +574,47 @@ section{
 }
 
 @media screen and (max-width: 1200px) {
-
-
     .main-container{
         width: 95%;
     }
     .main-content{
         width: 100%;
     }
-
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 900px)
 {
 
     .main-container{
-        margin-top: 250px;
+        margin-top: 120px;
     }
 
     .image-carousel{
-        margin-bottom: 30px;
+        flex-direction: column;
         width: 85%;
         align-self: center;
         position: relative;
-        height: 40vh;
     }
     
     .car-pos{
         width: 100%;
-        height: 30vh;
-        position: absolute;
     }
     
     .img-car-size{
         width: 100%;
+        height: auto;
     }
     
     .car-1{
-        position: absolute;
-        top: -30%;
-        left: 0%;
         transition: all 1s ease-in-out;
     }
 
     .car-2{
         box-shadow: 0px 0px 10px 10px black;
-        position: absolute;
         transform: scale(1.1);
         z-index: 1;
         left: 0%;
+        top: 20%;
         transition: all 1s ease-in-out;
         box-shadow: 1px;
     }
@@ -636,8 +624,6 @@ section{
         bottom: 0%;
         filter: blur(2px);
         -webkit-filter: blur(2px);
-        position: absolute;
-        left: 0%;
         transition: all 1s ease-in-out;
     }
 
@@ -741,3 +727,28 @@ section{
         width: 20%;
     }
 }
+
+
+/* @media screen and (max-width: 600px) {
+
+    .main-container{
+        width: 100%;
+        margin-top: 200px;
+    }
+    .main-content{
+        width: 100%;
+    }
+
+} */
+
+/* @media screen and  (max-width: 900px) and (orientation:landscape){
+    .image-carousel{
+        margin-left: auto;
+        align-items: center;
+        height: 80vh;
+    }
+    .car-pos{
+        width: 80%;
+        height: 60vh;
+    }
+} */
