@@ -576,6 +576,8 @@ section{
 
 @media screen and (max-width: 1200px) {
 
+    
+
     .artist-containter{
         overflow: hidden;
         flex-wrap: wrap;
@@ -583,7 +585,6 @@ section{
 
     .artist{
         width: 15%;
-
     }
 
     .main-container{
@@ -597,6 +598,33 @@ section{
 
 @media screen and (max-width: 768px)
 {
+
+    #logo-name{
+        display: none;
+    }
+    
+    #fav-btn{
+        display: none;
+    }
+
+    .bell-logo{
+        display: none;
+    }
+
+    #search-bar-container{
+        width: 70%;
+    }
+
+    #logo-img{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    #prof-pic{
+        height: 40px;
+        width: 40px;
+    }
 
     .genre-logo-container:nth-last-child(-n+2){
         display: none;
