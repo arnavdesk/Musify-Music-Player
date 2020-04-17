@@ -1035,6 +1035,10 @@ section{
 
 @media screen and (max-width:786px){
 
+    #search-bar-div{
+        width: 65%;
+    }
+
     #prof-pic{
         height: 35px;
         width: 35px;
