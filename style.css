@@ -39,6 +39,7 @@ section{
 
 #navigation-bar
 {
+    width: 100%;
     z-index: 20;
     background-color:  rgb(11, 16, 39);
     position: fixed;
@@ -46,11 +47,45 @@ section{
     right: 0px;
     left: 0px;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 3px solid black;
+}
+
+#menu-btn{
+    font-size: 1.2em;
+    display: none;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.nav-main{
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border-bottom: 3px solid black;
+}
+
+.menu-bar-drop{
+    width: 95%;
+    overflow: hidden;
+    max-height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: all 0.5s ease-in-out;
+    margin-right: 5px;
+}
+
+.label-menu-check{
+    margin-right: 10px;
+}
+
+#menu-chk{
+    display: none;
 }
 
 .branding{
@@ -75,16 +110,16 @@ section{
 }
 
 #fav-btn{
-    margin-left: auto;
+    margin-left: 30px;
     font-weight: 100;
 }
 
 #search-bar-container{
-    width: 35%;
+    width: 45%;
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 0px;
     justify-content: space-between;
 }
 
@@ -668,6 +703,22 @@ section{
     font-size: 1.1em;
 }
 
+#pause{
+    font-size: 1.1em;
+    display: none;
+}
+
+#play-pause{
+    display: none;
+}
+
+#play-pause:checked + label #play{
+    display: none;
+}
+#play-pause:checked + label #pause{
+    display: block;
+}
+
 .footer-controls-progress{
     width: 100%;
     display: flex;
@@ -824,6 +875,14 @@ section{
 @media screen and (max-width: 900px)
 {
 
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-chk:checked + .menu-bar-drop{
+        max-height: 80vh;
+    }
+
     #queue-chk:checked + .queue-bottom-section {
         overflow: scroll;
         max-height: 40vh;
@@ -914,14 +973,13 @@ section{
     }
 
     #logo-img{
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
 
     #prof-pic{
-        height: 35px;
-        width: 35px;
+        height: 50px;
+        width: 50px;
     }
 
     .queue-section{
@@ -976,6 +1034,16 @@ section{
 }
 
 @media screen and (max-width:786px){
+
+    #prof-pic{
+        height: 35px;
+        width: 35px;
+    }
+
+    #logo-img{
+        width: 35px;
+        height: 35px;
+    }
 
     .image-carousel{
         width: 90%;
@@ -1045,10 +1113,5 @@ section{
     #volume-up{
         display: none;
     }
-
-}
-
-@media screen and (max-height:500px)
-{
 
 }
