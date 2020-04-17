@@ -597,6 +597,7 @@ section{
     display: flex;
     width: 90%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .playing-song{
@@ -652,7 +653,7 @@ section{
 
 .footer-controls-button{
     width: 100%;
-    padding: 10px 0px;
+    padding-top: 5px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -675,6 +676,10 @@ section{
 
 .footer-controls-progress input[type="range"]{
     width: 80%;
+}
+
+.vol-control{
+    width: 50%;
 }
 
 .footer-controls-progress p{
@@ -726,18 +731,16 @@ section{
 
 .playing-now{
     border: 1px solid white;
+    box-shadow: 0px 0px 5px 1px white;
 }
 
 #queue-chk{
     display: none;
 }
 
-#queue-chk:checked + .queue-bottom-section {
-    overflow: scroll;
-    max-height: 200px;
-}
 
 .queue-open{
+    font-size: 0.9em;
     margin-left: 5px;
     color: green;
     display: none;
@@ -820,6 +823,19 @@ section{
 
 @media screen and (max-width: 900px)
 {
+
+    #queue-chk:checked + .queue-bottom-section {
+        overflow: scroll;
+        max-height: 40vh;
+    }
+
+    .playing-song{
+        display: none;
+    }
+
+    .queue-open{
+        display: block
+    }
 
     .main-container{
         margin-top: 120px;
@@ -1009,4 +1025,30 @@ section{
         width: 30%;
         margin-bottom: 20px;
     }
+
+    .footer-controls{
+        width: 55%;
+    }
+
+    .sound-controls{
+        width: 15%;
+    }
+
+    .vol-control{
+        display: none;
+    }
+
+    #volume-dwn{
+        display: none;
+    }
+
+    #volume-up{
+        display: none;
+    }
+
+}
+
+@media screen and (max-height:500px)
+{
+
 }
