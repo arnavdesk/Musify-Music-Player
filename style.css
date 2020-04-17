@@ -970,6 +970,7 @@ section{
 
     #search-bar{
         outline: none;
+        width: 85%;
     }
 
     #logo-img{
