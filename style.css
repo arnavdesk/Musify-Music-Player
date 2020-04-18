@@ -294,6 +294,23 @@ section{
 .latest-release-img-container{
     width: 30%;
     height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-release-img-container i{
+    position: absolute;
+    display: none;
+}
+
+.latest-release-img-container:hover img{
+    opacity: 0.5;
+}
+
+.latest-release-img-container:hover i{
+    display: inline-block;
 }
 
 .latest-release-utility{
@@ -437,6 +454,10 @@ section{
     width: 9%;
 }
 
+.genre-logo-container:hover img{
+    box-shadow: 0px 0px 10px 5px black;
+}
+
 .genre-logo{
     width: 100%;
     border-radius: 50%;
@@ -464,12 +485,19 @@ section{
     justify-content: center;
     position: relative;
     width: 30%;
+    perspective: 1000px;
+    overflow: hidden;
 }
 
 .genre-extend-img{
     filter: blur(1px);
     -webkit-filter: blur(1px);
     width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.genre-extended-container:hover .genre-extend-img{
+    transform: translateZ(100px);
 }
 
 .genre-extended-container p{
@@ -499,6 +527,23 @@ section{
 .latest-song-EH-img-container{
     width: 100%;
     height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-song-EH-img-container i{
+    display: none;
+    position: absolute;
+}
+
+.latest-song-EH-img-container:hover{
+    opacity: 0.5;
+}
+
+.latest-song-EH-img-container:hover i{
+    display: inline-block;
 }
 
 .latest-song-EH-img{
@@ -809,6 +854,8 @@ section{
 /* Media Queries */
 
 
+/* For general responsive design and iPad pro */
+
 @media screen and (max-width: 1200px) {
 
     .main-container{
@@ -880,6 +927,8 @@ section{
 
    
 }
+
+/* For iPads in landscape */
 
 @media screen and (max-width: 900px)
 {
@@ -1042,6 +1091,8 @@ section{
     }
 
 }
+
+/* For iPads and mobile devices */
 
 @media screen and (max-width:786px){
 
