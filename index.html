@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musify</title>
+    <link rel="icon" type="image/png" sizes="60x60" href="/favicon-60.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,7 +29,7 @@
 
                 <div id="search-bar-container">
                     <div id="search-bar-div">
-                        <input id="search-bar" placeholder="  Search" type="text">
+                        <input id="search-bar" placeholder="Search" type="text">
                         <span id="search-btn"><i class="fas fa-search"></i></span>
                     </div>
                     <span class="bell-logo"><i class="fas fa-bell"></i></span>
@@ -185,60 +186,73 @@
                     </h4>
                 </div>
                 <div class="artist-container">
+
                     <div class="artist">
-                        <div class="artist-image-container">
-                            <img class="artist-image" src="assets/artist/ed-sheeran.jpeg" alt="ed sheeran">
-                        </div>
-                        <div class="artist-name">
-                            <h5>Ed Sheeran</h5>
-                        </div>
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/ed-sheeran.jpeg" alt="ed sheeran">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Ed Sheeran</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="artist">
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/coldplay.jpg" alt="Coldplay">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Coldplay</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="artist">
-                        <div class="artist-image-container">
-                            <img class="artist-image" src="assets/artist/coldplay.jpg" alt="Coldplay">
-                        </div>
-                        <div class="artist-name">
-                            <h5>Coldplay</h5>
-                        </div>
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/zayn.jpeg" alt="Zayn">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Zayn</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="artist">
-                        <div class="artist-image-container">
-                            <img class="artist-image" src="assets/artist/zayn.jpeg" alt="Zayn">
-                        </div>
-                        <div class="artist-name">
-                            <h5>Zayn</h5>
-                        </div>
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/arijit-singh.jpg" alt="Arijit Singh">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Arijit Singh</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="artist">
-                        <div class="artist-image-container">
-                            <img class="artist-image" src="assets/artist/arijit-singh.jpg" alt="Arijit Singh">
-                        </div>
-                        <div class="artist-name">
-                            <h5>Arijit Singh</h5>
-                        </div>
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/bruno-mars.jpg" alt="Bruno Mars">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Bruno Mars</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="artist">
-                        <div class="artist-image-container">
-                            <img class="artist-image" src="assets/artist/bruno-mars.jpg" alt="Bruno Mars">
-                        </div>
-                        <div class="artist-name">
-                            <h5>Bruno Mars</h5>
-                        </div>
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/charlie-puth.jpeg" alt="Charlie Puth">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Charlie Puth</h5>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="artist">
-                        <div class="artist-image-container">
-                            <img class="artist-image" src="assets/artist/charlie-puth.jpeg" alt="Charlie Puth">
-                        </div>
-                        <div class="artist-name">
-                            <h5>Charlie Puth</h5>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
@@ -462,9 +476,15 @@
                 <div class="queue-flap">
                     <p>Queue <i class="fas fa-chevron-down"></i></p>
                     <div class="queue-flap-body">
-                        <a>Playlist</a>
+                        <div>
+                            <i class="fas fa-play"></i>
+                            <span>Playlist</span>
+                        </div>
                         <hr>
-                        <a>Favourites</a>
+                        <div>
+                            <i class="fas fa-heart"></i>
+                            <span>Favourite Songs</span>
+                        </div>
                     </div>
                 </div>
             </div>
